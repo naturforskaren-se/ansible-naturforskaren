@@ -15,7 +15,7 @@ The playbooks should be run in the following order.
 ## pre-req
 
 ## Playbook 'naturforskaren_setup-user.yml'
-- ``` ansible-playbook -u ingimar naturforskaren_setup-user.yml
+- ``` ansible-playbook -u ingimar naturforskaren_setup-user.yml ```
 
 ## Playbook 'naturforskaren_download_and_extract_tar.yml'
 Run as user 's-research':
