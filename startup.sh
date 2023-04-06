@@ -1,8 +1,11 @@
 #!/bin/sh -e
 NOW=`date +"%Y-%m-%d"`
-echo "$NOW : test script for reboot " >> reboot_logger.log
+echo "$NOW : script for reboot " >> reboot_logger.log
 
-services="docker-naturforskaren naturalist-populationstrend naturalist-proxy"
+# create the docker-network
+./setup_docker_network.sh
+
+services="naturforskaren populationstrend proxy"
 for service in $services
 do
     echo "Launching $service..."
@@ -10,3 +13,7 @@ do
     sleep 5
     echo "... done"
 done
+
+# Deploy the war-file to Wildfly
+cd naturforskaren && make naturalist-deploy && cd ..
+echo "deployed the war-file to naturforskaren"
