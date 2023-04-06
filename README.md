@@ -34,6 +34,12 @@ Run as user 's-research':
 - Fetches the media/map tar-file from owncloud
 - Extracts the tar-file
 
+check the number of files- should be the following 
+```
+/opt/data/nf$ tree | wc
+ 150535  592593 685708
+``` 
+
 ## Playbook 'naturforskaren_clone_proxy_github_repo.yml'
 Run as user 's-research':  ```ansible-playbook -u s-research naturforskaren_clone_proxy_github_repo.yml```
 
