@@ -1,0 +1,14 @@
+---
+- name: Download and extract tar file
+  hosts: all
+
+  tasks:
+    - name: Download tar file
+      get_url:
+        url: "https://owncloud.nrm.se/index.php/s/dxe86tls3kDOGeF/download"
+        dest: "/tmp/media-file.tar.gz"
+
+    - name: Extract tar file
+      become: yes
+      command: "tar xvf /tmp/media-file.tar.gz -C /opt"
+...
