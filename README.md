@@ -6,8 +6,9 @@ The playbooks should be run in the following order.
 1. setup the user 's-research' with privileges and with a key
 2. Download the media/maps from owncloud 
 3. Clone the proxy-server from github, a docker-project
-4. Clone the naturforskaren-services from github , a docker-project
-5. Fetch the databasedump (users have been erased) from owncloud.nrm.se
+4. Clone the 'naturforskaren'-service from github , a docker-project
+5. Clone the 'populationstrend'-service from github.
+6. Fetch the databasedump (users have been erased) from owncloud.nrm.se
 
 ## pre-req
 
@@ -25,8 +26,11 @@ Run as user 's-research' -> ansible-playbook -u s-research naturforskaren_clone_
 
 ## Playbook 'naturforskaren_clone_naturforskaren_github_repo.yml'
 Run as user 's-research' -> ansible-playbook -u s-research naturforskaren_clone_naturforskaren_github_repo.yml`
-
 - fetches the docker-project
+
+## Playbook 'naturforskaren_clone_populationstrend_github-repo.yml'
+
+
 
 ## Playbook 'naturforskaren_download_databasedump.yml' 
 Run as user 's-research' -> ansible-playbook -u s-research naturforskaren_download_databasedump.yml'
