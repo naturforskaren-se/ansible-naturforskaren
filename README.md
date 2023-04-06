@@ -85,3 +85,10 @@ root@ubuntu-s-2vcpu-4gb-lon1-01:/home/s-research/repos#
 ```
 
 -----------------
+# Troubleshoot the service.
+
+## settings for naturforskaren and proxy
+
+### simple setup, using dummy url and NO SSL
+- naturforskaren and docker-compose.yml: if the url is set to forinstance 'naturforskaren.org'
+- then the service is reachable at : ``` http://naturforskaren.org/naturalist/ ``` - mandatory with ```/naturalist/```
