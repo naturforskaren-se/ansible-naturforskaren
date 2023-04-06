@@ -15,10 +15,11 @@ The playbooks should be run in the following order.
 ## pre-req
 
 ## Playbook 'naturforskaren_setup-user.yml'
-- sets up the user 's-research' on a node
+- ``` ansible-playbook -u ingimar naturforskaren_setup-user.yml
 
 ## Playbook 'naturforskaren_download_and_extract_tar.yml'
-Run as user 's-research':  ``` ansible-playbook -u s-research naturforskaren_download_and_extract_tar.yml```
+Run as user 's-research':
+- ``` ansible-playbook -u s-research naturforskaren_download_and_extract_tar.yml```
 
 - Fetches the media/map tar-file from owncloud
 - Extracts the tar-file
