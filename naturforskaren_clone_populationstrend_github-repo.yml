@@ -4,7 +4,7 @@
    - name: Clone a github repository
      git:
        repo: https://github.com/naturforskaren-se/naturalist-populationstrend.git
-       dest: /home/s-research/repos/naturforskaren
+       dest: /home/s-research/repos/populationstrend
        clone: yes
        update: yes
 ...
