@@ -74,3 +74,12 @@ Run as user 's-research':  ```ansible-playbook -u s-research naturforskaren_copy
 Run as user 's-research': ```ansible-playbook -u s-research naturforskaren_create_crontab_for_root.yml``` 
 
 - creates a '@reboot' in roots crontab, starting up all the services, using the setup.sh-file
+
+**check** the crontab for root
+```
+~/repos$ sudo su
+root@ubuntu-s-2vcpu-4gb-lon1-01:/home/s-research/repos# crontab -l
+#Ansible: a job for reboot
+@reboot /home/s-research/repos/startup.sh
+root@ubuntu-s-2vcpu-4gb-lon1-01:/home/s-research/repos#
+```
