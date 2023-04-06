@@ -1,5 +1,8 @@
 #!/bin/sh -e
 
+# remove the docker-network
+docker network rm naturalist
+
 services="naturforskaren populationstrend proxy"
 for service in $services
 do
