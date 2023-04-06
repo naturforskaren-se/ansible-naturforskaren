@@ -2,6 +2,7 @@
 
 ## Add host file to hosts
 - /etc/ansible/hosts
+- add your host(s)
 
 
 
