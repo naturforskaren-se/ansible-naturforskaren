@@ -1,11 +1,13 @@
+# pre-req 
+- [creating a ssh-keypair](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) 
+- before you run the playbooks as 's-research' you need to add your ssh key to the ssh-agent. (``` ssh-add ~/.ssh/id_rsa ```)
+
 # ansible-naturforskaren
 Ansible scripts to deploy the infrastructure for naturforskaren
 
 The playbooks should be run in the following order.
-- [creating a ssh-keypair](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
-
 1. setup the user 's-research' with privileges and with a key
-2. Before you run the the playbooks as user 's-research' you need to add your ssh key (``` ssh-add ~/.ssh/id_rsa ```)
+2. Before you run the the playbooks as user 's-research' 
 3. Download the media/maps from owncloud 
 4. Clone the proxy-server from github, a docker-project
 5. Clone the 'naturforskaren'-service from github , a docker-project
@@ -14,7 +16,7 @@ The playbooks should be run in the following order.
 8. Copy startup.sh script to remote machine
 9. Create a crontab-job for root
 
-## pre-req
+
 
 ## Playbook 'naturforskaren_setup-user.yml'
 - ``` ansible-playbook -u ingimar naturforskaren_setup-user.yml ```
