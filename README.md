@@ -72,3 +72,5 @@ Run as user 's-research':  ```ansible-playbook -u s-research naturforskaren_copy
 
 ## Playbook 'naturforskaren_create_crontab_for_root.yml'
 Run as user 's-research': ```ansible-playbook -u s-research playbook_setup_cronjob.yml``` 
+
+- creates a '@reboot' in roots crontab, starting up all the services, using the setup.sh-file
