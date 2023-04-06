@@ -3,7 +3,7 @@
    tasks:
    - name: Clone a github repository
      git:
-       repo: https://github.com/Inkimar/docker-naturforskaren.git
+       repo: https://github.com/naturforskaren-se/docker-naturforskaren.git
        dest: /home/s-research/repos/naturforskaren
        clone: yes
        update: yes
