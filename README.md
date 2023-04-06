@@ -5,6 +5,9 @@ The playbooks should be run in the following order.
 
 1. setup the user 's-research' with privileges and with a key
 2. Download the media/maps from owncloud 
+3. Fetch the proxy-server, a docker-project
+4. Fetch the natuforskaren-services , a docker-project
+5. 
 
 ## pre-req
 
