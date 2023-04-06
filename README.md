@@ -16,19 +16,21 @@ The playbooks should be run in the following order.
 - sets up the user 's-research' on a node
 
 ## Playbook 'naturforskaren_download_and_extract_tar.yml'
-Run as user 's-research' -> ansible-playbook -u s-research naturforskaren_download_and_extract_tar.yml`
+Run as user 's-research' -> `ansible-playbook -u s-research naturforskaren_download_and_extract_tar.yml`
 
 - Fetches the media/map tar-file from owncloud
 - Extracts the tar-file
 
 ## Playbook 'naturforskaren_clone_proxy_github_repo.yml'
-Run as user 's-research' -> ansible-playbook -u s-research naturforskaren_clone_proxy_github_repo.yml`
+Run as user 's-research' -> `ansible-playbook -u s-research naturforskaren_clone_proxy_github_repo.yml`
 
 ## Playbook 'naturforskaren_clone_naturforskaren_github_repo.yml'
-Run as user 's-research' -> ansible-playbook -u s-research naturforskaren_clone_naturforskaren_github_repo.yml`
+Run as user 's-research' -> `ansible-playbook -u s-research naturforskaren_clone_naturforskaren_github_repo.yml`
 - fetches the docker-project
 
 ## Playbook 'naturforskaren_clone_populationstrend_github-repo.yml'
+Run as user 's-research' -> ansible-playbook -u s-research naturforskaren_clone_populationstrend_github-repo.yml`
+
 
 
 
