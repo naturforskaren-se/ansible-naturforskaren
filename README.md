@@ -1,4 +1,11 @@
 # pre-req 
+
+## Add host file to hosts
+- /etc/ansible/hosts
+
+
+
+## creating a ssh-keypair
 - [creating a ssh-keypair](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) 
 - before you run the playbooks as 's-research' you need to add your ssh key to the ssh-agent. (``` ssh-add ~/.ssh/id_rsa ```)
 
