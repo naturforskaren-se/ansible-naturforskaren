@@ -1,0 +1,11 @@
+---
+ - hosts: all
+   tasks:
+   - name: Creates an entry like "@reboot /home/s-research/repos/startup.sh"
+     ansible.builtin.cron:
+       name: "a job for reboot"
+       special_time: reboot
+       job: "/home/s-research/repos/startup.sh"
+       user: root
+     become: true
+...
