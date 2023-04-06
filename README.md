@@ -2,15 +2,17 @@
 Ansible scripts to deploy the infrastructure for naturforskaren
 
 The playbooks should be run in the following order.
+- [creating a ssh-keypair](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 
 1. setup the user 's-research' with privileges and with a key
-2. Download the media/maps from owncloud 
-3. Clone the proxy-server from github, a docker-project
-4. Clone the 'naturforskaren'-service from github , a docker-project
-5. Clone the 'populationstrend'-service from github.
-6. Fetch the databasedump (users have been erased) from owncloud.nrm.se
-7. Copy startup.sh script to remote machine
-8. Create a crontab-job for root
+2. Before you run the the playbooks as user 's-research' you need to add your ssh key (``` ssh-add ~/.ssh/id_rsa ```)
+3. Download the media/maps from owncloud 
+4. Clone the proxy-server from github, a docker-project
+5. Clone the 'naturforskaren'-service from github , a docker-project
+6. Clone the 'populationstrend'-service from github.
+7. Fetch the databasedump (users have been erased) from owncloud.nrm.se
+8. Copy startup.sh script to remote machine
+9. Create a crontab-job for root
 
 ## pre-req
 
