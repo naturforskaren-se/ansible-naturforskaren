@@ -3,7 +3,7 @@
    tasks:
    - name: Clone a github repository
      git:
-       repo: https://github.com/Naturhistoriska/naturalist-proxy.git
+       repo: https://github.com/naturforskaren-se/naturalist-proxy.git
        dest: /home/s-research/repos/proxy
        clone: yes
        update: yes
