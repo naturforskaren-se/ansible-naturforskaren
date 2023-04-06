@@ -1,0 +1,8 @@
+- name: Download the databasedump
+  hosts: all
+
+  tasks:
+    - name: Download the sql-file
+      get_url:
+        url: "https://owncloud.nrm.se/index.php/s/NhprXwiuJ4kxr5S/download"
+        dest: "/home/s-research/repos/naturforskaren/db/mysql_media-autoload/taxonpages_v2_no_user.sql"
