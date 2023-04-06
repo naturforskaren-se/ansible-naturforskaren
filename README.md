@@ -27,3 +27,9 @@ Run as user 's-research' -> ansible-playbook -u s-research naturforskaren_clone_
 Run as user 's-research' -> ansible-playbook -u s-research naturforskaren_clone_naturforskaren_github_repo.yml`
 
 - fetches the docker-project
+
+## Playbook 'naturforskaren_download_databasedump.yml' 
+Run as user 's-research' -> ansible-playbook -u s-research naturforskaren_download_databasedump.yml'
+
+### info
+- the databasedump, the user-table has been emptied
