@@ -9,7 +9,7 @@ The playbooks should be run in the following order.
 4. Clone the 'naturforskaren'-service from github , a docker-project
 5. Clone the 'populationstrend'-service from github.
 6. Fetch the databasedump (users have been erased) from owncloud.nrm.se
-7. Copy startup.sh script to user
+7. Copy startup.sh script to remote machine
 8. Create a crontab-job for root
 
 ## pre-req
@@ -40,7 +40,8 @@ Run as user 's-research':  ```ansible-playbook -u s-research naturforskaren_down
 - the databasedump, the user-table has been emptied
 
 
-## Playook 'naturforskaren_copy.yml'
+## Playook 'naturforskaren_copy_file.yml'
+Run as user 's-research':  ```ansible-playbook -u s-research naturforskaren_copy_file.yml``` 
 
 
 ## Playbook 'naturforskaren_create_crontab_for_root.yml'
