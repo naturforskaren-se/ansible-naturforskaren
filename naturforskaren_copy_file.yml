@@ -1,0 +1,11 @@
+---
+- name: Copy file to remote machine
+  hosts: 
+  tasks:
+    - name: Copy file
+      copy:
+        src: ./startup.sh  
+        dest: /home/s-research/repos/
+          #owner: myuser  # Replace with the owner of the remote file
+          #group: mygroup  # Replace with the group of the remote file
+        mode: '0774'
