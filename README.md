@@ -9,7 +9,7 @@
 ## creating a ssh-keypair
 - [creating a ssh-keypair](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) 
 - public key: the public key, a reference is added to the naturforskaren_setup-user.yml
-- private key (id_rsa) is stored in the ``` ~/.ssh/id_rsa ```
+- private key (id_rsa) is stored in the ``` ~/.ssh/ ``` -directory
 - before you run the playbooks as 's-research' you need to add your ssh key to the ssh-agent.
 - command: (``` ssh-add ~/.ssh/id_rsa ```)
 
