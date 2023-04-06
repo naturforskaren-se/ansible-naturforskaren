@@ -36,7 +36,7 @@ Run as user 's-research':
 - Fetches the media/map tar-file from owncloud
 - Extracts the tar-file
 
-check the number of files- should be the following 
+**check** the number of files- should be the following 
 ```
 /opt/data/nf$ tree | wc
  150535  592593 685708
@@ -54,6 +54,12 @@ Run as user 's-research': ```ansible-playbook -u s-research naturforskaren_clone
 
 ## Playbook 'naturforskaren_download_databasedump.yml' 
 Run as user 's-research':  ```ansible-playbook -u s-research naturforskaren_download_databasedump.yml```
+
+**check** the md5sum of the sql-file
+```
+~/repos/naturforskaren/db/mysql_media-autoload$ md5sum taxonpages_v2_no_user.sql 
+dbb4fcc1d0f48d9739e0feb047fd95a5  taxonpages_v2_no_user.sql
+``` 
 
 ### info
 - the databasedump, the user-table has been emptied
