@@ -15,7 +15,7 @@
 # ansible-naturforskaren
 Ansible scripts to deploy the infrastructure for naturforskaren
 
-The playbooks should be run in the following order.
+Summary: - The playbooks should be run in the following order.
 1. setup the user 's-research' with privileges and with a key
 2. Download the media/maps from owncloud (**note** this takes some time)
 3. Clone the proxy-server from github, a docker-project
