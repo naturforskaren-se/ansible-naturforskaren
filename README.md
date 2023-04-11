@@ -29,8 +29,7 @@ Summary: - The playbooks should be run in the following order.
 
 ## Playbook 'naturforskaren_setup-user.yml'
 for instance as the user 'ingierli'
-- the user should have a passwordless keypair
-- the user should have a passwordless sudo  
+1. the user should have a passwordless keypair and the user should have a passwordless sudo on the target machine ...  
 
 - ``` ansible-playbook -u ingierli naturforskaren_setup-user.yml ```
 
