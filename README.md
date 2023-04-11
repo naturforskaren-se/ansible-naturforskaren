@@ -28,7 +28,11 @@ Summary: - The playbooks should be run in the following order.
 
 
 ## Playbook 'naturforskaren_setup-user.yml'
-- ``` ansible-playbook -u ingimar naturforskaren_setup-user.yml ```
+for instance as the user 'ingierli'
+- the user should have a passwordless keypair
+- the user should have a passwordless sudo  
+
+- ``` ansible-playbook -u ingierli naturforskaren_setup-user.yml ```
 
 ## Playbook 'naturforskaren_download_and_extract_tar.yml'
 Run as user 's-research':
