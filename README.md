@@ -18,7 +18,7 @@ Ansible scripts to deploy the infrastructure for naturforskaren
 Summary: - The playbooks should be run in the following order.
 1. setup the user 's-research' with privileges and with a key
 2. Download the media/maps from owncloud (**note** this takes some time)
-3. Clone the proxy-server from github, a docker-project
+3. Clone the proxy-server from github, a docker-project ``` [for production do (a) cp the cert-files to the proxy/cert-dir, (b) use the natuforskaren.se.conf as your nginx-proxy.conf ] 
 4. Clone the 'naturforskaren'-service from github , a docker-project
 5. Clone the 'populationstrend'-service from github.
 6. Fetch the databasedump (users have been erased) from owncloud.nrm.se
