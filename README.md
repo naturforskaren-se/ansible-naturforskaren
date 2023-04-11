@@ -72,7 +72,9 @@ dbb4fcc1d0f48d9739e0feb047fd95a5  taxonpages_v2_no_user.sql
 ## Playook 'naturforskaren_copy_file.yml'
 Run as user 's-research':  ```ansible-playbook -u s-research naturforskaren_copy_file.yml``` 
 
-- copies the setup.sh file , with +x privileges.
+- copies the setup.sh file   ,        with +x privileges.
+- copies the stopall.sh file ,        with +x privileges.
+- copies the setup_docker_network.sh, with +x privileges.
 
 ## Playbook 'naturforskaren_create_crontab_for_root.yml'
 Run as user 's-research': ```ansible-playbook -u s-research naturforskaren_create_crontab_for_root.yml``` 
