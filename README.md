@@ -37,14 +37,18 @@ for instance as the user 'ingierli'
 Run as user 's-research':
 - ``` ansible-playbook -u s-research naturforskaren_download_and_extract_tar.yml```
 
-- Fetches the media/map tar-file from owncloud
-- Extracts the tar-file
+- Fetches the media- and the map-file 
+- Extracts the media- and the map-tar.gz
 
 **check** the number of files- should be the following 
 ```
 /opt/data/nf$ tree | wc
  150535  592593 685708
 ``` 
+
+### tar-command used to archive
+- media: tar -zcvf -P /tmp/naturforskaren_media_images.tar.gz /opt/data/nf/vffmedia/ ```
+- maps : 
 
 ## Playbook 'naturforskaren_clone_proxy_github_repo.yml'
 Run as user 's-research':  ```ansible-playbook -u s-research naturforskaren_clone_proxy_github_repo.yml```
