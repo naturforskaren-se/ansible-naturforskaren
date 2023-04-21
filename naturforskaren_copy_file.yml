@@ -19,11 +19,11 @@
         dest: /home/s-research/repos/
         mode: '0774'
 
-- name: Copy the setup_docker_network-file to the remote machine
-  hosts: all
-  tasks:
-    - name: Copy file
-      copy:
-        src: ./setup_docker_network.sh
-        dest: /home/s-research/repos/
-        mode: '0774'
+# - name: Copy the setup_docker_network-file to the remote machine
+#   hosts: all
+#   tasks:
+#     - name: Copy file
+#       copy:
+#         src: ./setup_docker_network.sh
+#         dest: /home/s-research/repos/
+#         mode: '0774'
