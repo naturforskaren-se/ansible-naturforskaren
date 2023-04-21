@@ -16,5 +16,5 @@ done
 
 # Deploy the war-file to Wildfly
 sleep 10
-cd naturforskaren && make naturalist-deploy && cd ..
+cd ~/repos/naturforskaren && make naturalist-deploy && cd ..
 echo "deployed the war-file to naturforskaren"
