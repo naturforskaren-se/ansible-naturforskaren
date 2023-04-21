@@ -3,7 +3,7 @@ NOW=`date +"%Y-%m-%d"`
 echo "$NOW : script for reboot " >> reboot_logger.log
 
 # create the docker-network
-./setup_docker_network.sh
+./naturforskaren/setup_docker_network.sh
 
 services="naturforskaren populationstrend proxy"
 for service in $services
