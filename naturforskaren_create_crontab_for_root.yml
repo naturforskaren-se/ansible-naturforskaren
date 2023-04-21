@@ -5,7 +5,7 @@
      ansible.builtin.cron:
        name: "a job for reboot"
        special_time: reboot
-       job: "/home/s-research/repos/startup.sh"
+       job: "su s-research -l -c  "cd /home/s-research/repos && ./startup.sh""
        user: root
      become: true
 ...
